@@ -1,0 +1,46 @@
+{
+  "name": "overwatch-audio",
+  "type": "module",
+  "main": "./build/code/index.js",
+  "exports": {
+    "import": "./build/code/index.js",
+    "require": "./build/wrapper.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:peterjwest/overwatch-audio.git"
+  },
+  "files": [
+    "/build"
+  ],
+  "author": "Peter West",
+  "bugs": {
+    "url": "https://github.com/peterjwest/overwatch-audio/issues"
+  },
+  "keywords": [
+    "string",
+    "multline",
+    "dedent",
+    "deindent",
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/peterjwest/overwatch-audio#readme",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "only-allow": "^1.2.1",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/lodash": "^4.17.7",
+    "jsdom": "^24.1.0",
+    "lodash": "^4.17.21"
+  }
+}
